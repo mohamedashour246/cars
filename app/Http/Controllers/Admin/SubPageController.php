@@ -79,9 +79,7 @@ class SubPageController extends Controller
 
     public function updateSubPage($id)
     {
-        //dd(request()->all());
         $sub_page = SubPage::find($id);
-      //  $page = Page::find($id);
 
         $validator = Validator::make(request()->all(), [
             'image' => 'nullable|mimes:jpg,jpeg,png,gif',
