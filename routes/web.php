@@ -108,4 +108,20 @@ Route::group(['namespace' =>'Admin', 'prefix' => 'dashboard' ,'middleware' => 'a
         'as' => 'admin.subpages.delete'
     ]);
 
+    #links
+    Route::get('/link',[
+        'uses' => 'LinkController@getLink',
+        'as' => 'admin.links'
+    ]);
+
+    Route::get('/link/create',[
+        'uses' => 'LinkController@addLink',
+        'as' => 'admin.links.add'
+    ]);
+
+    Route::post('/link/post',[
+        'uses' => 'LinkController@postLink',
+        'as' => 'admin.links.post'
+    ]);
+
 });

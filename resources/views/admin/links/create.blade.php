@@ -11,19 +11,17 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
 
-                            <form action="{{ url('/dashboard/page/update/'.$page->id) }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{route('admin.links.post')}}" method="POST" enctype="multipart/form-data">
 
-                                <input type="hidden" name="id" value="{{$page->id}}">
                                 @csrf
                                 <div class="info">
-                                    <h6 class="">edit Page</h6>
+                                    <h6 class="">Add New link</h6>
                                     <div class="row">
                                         <div class="col-lg-11 mx-auto">
                                             <div class="row">
-
                                                 <div class="col-xl-2 col-lg-12 col-md-4">
                                                     <div class="upload mt-4 pr-md-4">
-                                                        <input type="file" name="image" id="input-file-max-fs" class="dropify" data-default-file="{{asset('assets/uploads/pages/'.$page->image)}}" data-max-file-size="2M" />
+                                                        <input type="file" name="image" id="input-file-max-fs" class="dropify" data-default-file="{{asset('assets/img/200x200.jpg')}}" data-max-file-size="2M" />
                                                         <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> Upload Picture</p>
                                                     </div>
                                                 </div>
@@ -32,25 +30,24 @@
 
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="fullName">name_ar</label>
-                                                                <input type="text" class="form-control mb-4" id="name_ar" name="name_ar" placeholder="name_ar" value="{{$page->name_ar}}">
+                                                                <label for="fullName">content_ar</label>
+                                                                <input type="text" class="form-control mb-4" id="content_ar" name="content_ar" placeholder="content_ar" value="">
                                                             </div>
                                                         </div>
 
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="fullName">name_en</label>
-                                                                <input type="text" class="form-control mb-4" id="name_en" name="name_en" placeholder="name_en" value="{{$page->name_en}}">
+                                                                <label for="fullName">content_en</label>
+                                                                <input type="text" class="form-control mb-4" id="content_en" name="content_en" placeholder="content_en" value="">
                                                             </div>
                                                         </div>
 
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="fullName">content</label>
-                                                                <textarea class="form-control mb-4" id="con" cols="40" rows="10" name="content" placeholder="content" value="{{$page->content}}"></textarea>
+                                                                <label for="fullName">link</label>
+                                                                <input type="text" class="form-control mb-4" id="link" name="link" placeholder="link" value="">
                                                             </div>
                                                         </div>
-
 
                                                         <div class="col-sm-6">
                                                             <div class="form-group">

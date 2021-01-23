@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Page;
 use App\SubPage;
 use Illuminate\Http\Request;
-use Validator;
+use Illuminate\Support\Facades\Validator;
 
 class SubPageController extends Controller
 {
