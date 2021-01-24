@@ -124,4 +124,46 @@ Route::group(['namespace' =>'Admin', 'prefix' => 'dashboard' ,'middleware' => 'a
         'as' => 'admin.links.post'
     ]);
 
+    Route::get('/link/edit/{id}',[
+        'uses' => 'LinkController@editLink',
+        'as' => 'admin.links.edit'
+    ]);
+
+    Route::post('/link/update/{id}',[
+        'uses' => 'LinkController@updateLink',
+        'as' => 'admin.link.update'
+    ]);
+
+    Route::get('/link/delete/{id}',[
+        'uses' => 'LinkController@deleteLink',
+        'as' => 'admin.link.delete'
+    ]);
+
+    #contact
+    Route::get('/contact',[
+        'uses' => 'ContactUsController@getContact',
+        'as' => 'admin.contact'
+    ]);
+
+    // Route::get('/contact/create',[
+    //     'uses' => 'ContactUsController@addContact',
+    //     'as' => 'admin.contact.add'
+    // ]);
+
+    Route::post('/contact/post',[
+        'uses' => 'ContactUsController@postContact',
+        'as' => 'admin.contact.post'
+    ]);
+
+    Route::get('/contact/edit/{id}',[
+        'uses' => 'ContactUsController@editContact',
+        'as' => 'admin.contact.edit'
+    ]);
+
+    Route::post('/contact/update/{id}',[
+        'uses' => 'ContactUsController@updateContact',
+        'as' => 'admin.contact.update'
+    ]);
+
+
 });
