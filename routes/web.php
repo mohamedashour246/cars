@@ -150,10 +150,10 @@ Route::group(['namespace' =>'Admin', 'prefix' => 'dashboard' ,'middleware' => 'a
     //     'as' => 'admin.contact.add'
     // ]);
 
-    Route::post('/contact/post',[
-        'uses' => 'ContactUsController@postContact',
-        'as' => 'admin.contact.post'
-    ]);
+    // Route::post('/contact/post',[
+    //     'uses' => 'ContactUsController@postContact',
+    //     'as' => 'admin.contact.post'
+    // ]);
 
     Route::get('/contact/edit/{id}',[
         'uses' => 'ContactUsController@editContact',

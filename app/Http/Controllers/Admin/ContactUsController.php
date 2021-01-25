@@ -13,7 +13,7 @@ class ContactUsController extends Controller
    {
        $contacts = Contact::all();
        return view('admin.contact.display',compact('contacts'));
-   }  
+   }
 
    public function addContact()
    {
@@ -95,4 +95,5 @@ class ContactUsController extends Controller
         return redirect()->back()->with('fail','حدث خطأ ما');
     }
    }
+
 }
