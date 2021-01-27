@@ -31,14 +31,14 @@
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="fullName">content_ar</label>
-                                                                <input type="text" class="form-control mb-4" id="content_ar" name="content_ar" placeholder="content_ar" value="">
+                                                                <textarea class="form-control mb-4" id="demo1" name="content_ar" placeholder="content_ar" value=""></textarea>
                                                             </div>
                                                         </div>
 
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="fullName">content_en</label>
-                                                                <input type="text" class="form-control mb-4" id="content_en" name="content_en" placeholder="content_en" value="">
+                                                                <textarea class="form-control mb-4" id="demo2" name="content_en" placeholder="content_en" value=""></textarea>
                                                             </div>
                                                         </div>
 

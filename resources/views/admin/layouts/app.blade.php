@@ -33,6 +33,10 @@
     <link href="{{asset('assets/css/users/account-setting.css')}}" rel="stylesheet" type="text/css" />
     <!--  END CUSTOM STYLE FILE  -->
 
+     <link href="{{asset('assets/css/users/user-profile.css')}}" rel="stylesheet" type="text/css" />
+
+     <link href="{{asset('assets/css/scrollspyNav.css')}}" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="{{asset('plugins/editors/markdown/simplemde.min.css')}}">
 
 </head>
 <body class="alt-menu sidebar-noneoverflow">

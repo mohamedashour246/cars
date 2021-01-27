@@ -45,7 +45,7 @@
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="fullName">content</label>
-                                                                <textarea class="form-control mb-4"  name="content" cols="40" rows="10" placeholder="content" value="">
+                                                                <textarea class="form-control mb-4" id="demo1"  name="content" cols="40" rows="10" placeholder="content" value="">
                                                                 {{$sub_page->content}}
                                                                 </textarea>
                                                             </div>

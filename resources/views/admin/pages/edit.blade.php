@@ -47,7 +47,7 @@
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="fullName">content</label>
-                                                                <textarea class="form-control mb-4" id="con" cols="40" rows="10" name="content" placeholder="content" value="{{$page->content}}"></textarea>
+                                                                <textarea class="form-control mb-4" id="demo1" cols="40" rows="10" name="content" placeholder="content" value="">{{$page->content}}</textarea>
                                                             </div>
                                                         </div>
 

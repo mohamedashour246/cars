@@ -7,12 +7,14 @@ use App\Link;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+
 class LinkController extends Controller
 {
     public function getLink()
     {
         $links = Link::all();
         return view('admin.links.display',compact('links'));
+        
     }
 
     public function addLink()

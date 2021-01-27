@@ -9,17 +9,16 @@
                 <div class="widget-header">
                     <div class="row">
                         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                            <h4>All Pages</h4>
+                               <h4>All Pages</h4>
                         </div>
 
                         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                            <a href="{{route('admin.pages.add')}}">
-                                <button class="btn btn-primary"> Add </button>
-                            </a>
-                        </div>
+                              <a href="{{route('admin.pages.add')}}">
+                                  <button class="btn btn-primary"> Add </button>
+                              </a>
 
+                        </div>
                     </div>
-                </div>
                 <div class="widget-content widget-content-area">
                     <div class="table-responsive mb-4">
                         <table id="style-3" class="table style-3  table-hover">

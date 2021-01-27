@@ -17,6 +17,9 @@
 <script src="{{asset('assets/js/dashboard/dash_2.js')}}"></script>
 <script src="{{asset('assets/js/authentication/form-1.js')}}"></script>
 
+<script src="{{asset('assets/js/scrollspyNav.js')}}"></script>
+<script src="{{asset('plugins/editors/markdown/simplemde.min.js')}}"></script>
+<script src="{{asset('plugins/editors/markdown/custom-markdown.js')}}"></script>
 
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="{{asset('plugins/table/datatable/datatables.js')}}"></script>

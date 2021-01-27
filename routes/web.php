@@ -46,6 +46,11 @@ Route::group(['namespace' =>'Admin', 'prefix' => 'dashboard' ,'middleware' => 'a
            'as' => 'admin.users'
       ]);
 
+      Route::get('/profile',[
+           'uses' => 'UserController@getProfile',
+           'as' => 'admin.user.profile'
+      ]);
+
       #pages
       Route::get('/page',[
            'uses' => 'PageController@getPage',
